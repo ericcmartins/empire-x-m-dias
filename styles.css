@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*****************************NAV BAR*****************************/
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+}
+
+.logo-primeiro {
+    width: 144px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+ 
+
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  align-content: flex-end;
+}
+
+#menu a:hover {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 115%;
+    transition-duration: 0.5s;
+  }
+  
+
+.btn-fixed {
+    margin-right: 22px;
+    font-size: 1em;
+    font-weight: bold;
+    /* background-color: #00e9bc; */
+    background-image: linear-gradient(to bottom right, #01e9bd, #00b7de);
+    color: white;
+    display: block;
+    padding: 8px 25px;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: none;
+    font-size: 1em;
+    
+}
+
+.btn-fixed:hover {
+    margin-right: 22px;
+    font-size: 1em;
+    font-weight: bold;
+    /* background-color: #00e9bc; */
+    background-image: linear-gradient(to bottom right, #01e9bd, #00b7de);
+    color: white;
+    display: block;
+    padding: 8px 25px;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 20px;
+    border-color: none;
+    font-size: 105%;
+    transition-duration: 0.5s;
+}
+
+
+@media (max-width: 700px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .logo-primeiro {
+    margin-left: 0;
+    transition: 0.6s; 
+}
+
+.btn-fixed {
+    margin-right: 0;
+    transition: 0.6s;
+    
+}
+
+.btn-fixed:hover {
+    margin-right: 0;
+}
+}
+/*****************************NAV BAR*****************************/
+
+#sec-principal {
+    width: 100%;
+    height: 800px;
+    background-image: url("background-seção1.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.coroa-png {
+    width: 30px;
+    height: 30px;
+}
+
+.parag-introdutorio {
+    display: flex;
+    justify-content: flex-start;
+    color: #00e8e6;
+    font-family: raleway, sans-serif;
+    align-items: flex-end;
+    font-size: 18px;
+    padding: 100px 0 0 40px;
+    
+}
+.parag-coroa {
+  padding-left: 4px;
+}
+   
+#titulo-principal {
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    width: 52%;
+    margin-left: 40px;
+    margin-top: 10px;
+    line-height: 60px;
+}
+
+.parag-explicacao {
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    width: 40%;
+    margin-left: 40px;
+    line-height: 27px;
+}
+
+.botaocta-inicio {
+    margin-left: 35px;
+    margin-top: 20px;
+} 
+
+.botaocta-inicio {
+  margin-right: 22px;
+  font-size: 1em;
+  font-weight: bold;
+  /* background-color: #00e9bc; */
+  background-image: linear-gradient(to bottom right, #01e9bd, #00b7de);
+  color: white;
+  display: inline-block;
+  padding: 8px 25px;
+  color: white;
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  font-size: 1em;
+  border-radius: 20px;
+  border-color: #020104;
+  border-style: solid;
+  border-width: 2px;
+  
+}
+
+.botaocta-inicio:hover {
+  background-image: linear-gradient(to bottom right, black, black);
+  margin-right: 22px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #00e8e6;
+  display: inline-block;
+  padding: 8px 25px;
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 20px;
+  border-color: #00e8e6;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 105%;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 700px) {
+  #sec-principal {
+    height: 500px;
+    background-image: url("background-seção1.png");
+    background-position: 159.4vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  .parag-introdutorio {
+    font-size: 15px;
+    padding: 50px 0 0 40px;
+     
+}
+
+.coroa-png {
+  width: 20px;
+  height: 20px;
+}
+
+.parag-coroa {
+padding-left: 4px;
+}
+
+  #titulo-principal {
+    font-size: 40px;
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.parag-explicacao {
+  width: 80%;
+  margin-left: 40px;
+  line-height: 27px;
+  font-size: 15px;
+  }
+
+  .botaocta-inicio {
+    margin-left: 35px;
+    margin-top: 10px;
+} 
+
+}
